@@ -1,0 +1,4 @@
+$host = "sql303.infinityfree.com"; 
+$user = "if0_39898710"; 
+$pass = "eNnePxC9Nvp"; 
+$db = "if0_39898710_OlympicJabalAnNur2025";

@@ -1,0 +1,120 @@
+Isi tabel semua
+
+Tabel admin_users
+Users (int 11)
+username (varchar 55)
+password (varchar 256)
+
+Tabel jadwal_soccer
+pertandingan (int 11)
+tanggal (date)
+waktu (varchar 20)
+tim1_rw (int 11)
+tim2_rw (int 11)
+skor1_rw (int 11)
+skor2_rw (int 11)
+
+Tabel jadwal_basketball
+pertandingan (int 11)
+ronde (varchar 50)
+tim_a (varchar 100)
+tim_b (varchar 100)
+tanggal (date)
+waktu (varchar 50)
+skor_a (varchar 11)
+skor_b (varchar 11)
+
+Tabel jadwal_chess
+ronde (int 11)
+meja (int 11)
+pemain1 (varchar 100)
+pemain2 (varchar 100)
+waktu (varchar 50)
+skor1 (int 11)
+skor2 (int 11)
+
+Tabel jadwal_archery
+pertandingan (int 11)
+nama_pertandingan (varchar 50)
+peserta1 (varchar 100)
+peserta2 (varchar 100)
+peserta3 (varchar 100)
+peserta4 (varchar 100)
+skor1 (int 11)
+skor2 (int 11)
+skor3 (int 11)
+skor4 (int 11)
+waktu (varchar 50)
+
+Tabel jadwal_volleyball
+pertandingan (int 11)
+tanggal (date)
+tim_a (varchar 50)
+tim_b (varchar 50)
+waktu (varchar 20)
+skor_a (int 11)
+skor_b (int 11)
+
+Tabel peserta_soccer (Pemain 1-10 WAJIB DIISI, 11-14 boleh kosong)
+rw (int 11)
+nama_pic (varchar 100)
+telp (varchar 20)
+pemain1 (varchar 100)
+pemain2 (varchar 100)
+pemain3 (varchar 100)
+pemain4 (varchar 100)
+pemain5 (varchar 100)
+pemain6 (varchar 100)
+pemain7 (varchar 100)
+pemain8 (varchar 100)
+pemain9 (varchar 100)
+pemain10 (varchar 100)
+pemain11 (varchar 100)
+pemain12 (varchar 100)
+pemain13 (varchar 100)
+pemain14 (varchar 100)
+waktu_pendaftaran (datetime)
+
+Tabel peserta_basketball
+rw (int 11)
+pemain1 (varchar 50)
+pemain2 (varchar 50)
+pemain3 (varchar 50)
+pemain4 (varchar 50)
+pemain5 (varchar 50)
+pic (varchar 50)
+telepon (varchar 20)
+status (varchar 20)
+waktu_pendaftaran (datetime)
+
+Tabel peserta_chess
+rw (varchar 10)
+nama_peserta (varchar 100)
+pic (varchar 100)
+telp_pic (varchar 20)
+waktu_pendaftaran (datettime)
+
+Tabel peserta_archery
+rw (varchar 10)
+nama_peserta (varchar 100)
+nama_pic (varchar 100)
+no_telp_pic (varchar 20)
+poin (int 11)
+waktu_pendaftaran (datetime)
+
+Tabel peserta_volleyball
+rw (int 11)
+nama_pic (varchar 100)
+telp_pic (varchar 20)
+pemain1 (varchar 100)
+pemain2 (varchar 100)
+pemain3 (varchar 100)
+pemain4 (varchar 100)
+pemain5 (varchar 100)
+pemain6 (varchar 100)
+pemain7 (varchar 100)
+pemain8 (varchar 100)
+pemain9 (varchar 100)
+waktu_pendaftaran (datetime)
+
+Nah buat class diagramnya gimana?

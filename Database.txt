@@ -1,0 +1,65 @@
+-- jadwal_soccer
+DROP TABLE IF EXISTS jadwal_soccer;
+CREATE TABLE jadwal_soccer (
+    pertandingan INT(11) PRIMARY KEY,
+    tanggal DATE NOT NULL,
+    waktu VARCHAR(20) NOT NULL,
+    tim1_rw INT(11) NOT NULL,
+    tim2_rw INT(11) NOT NULL,
+    skor1 INT(11) DEFAULT 0,
+    skor2 INT(11) DEFAULT 0
+);
+
+-- jadwal_basket
+DROP TABLE IF EXISTS jadwal_basket;
+CREATE TABLE jadwal_basket (
+    pertandingan INT(11) PRIMARY KEY,
+    ronde VARCHAR(50) NOT NULL,
+    tim_a VARCHAR(100) NOT NULL,
+    tim_b VARCHAR(100) NOT NULL,
+    tanggal DATE NOT NULL,
+    waktu VARCHAR(50) NOT NULL,
+    skor_a INT(11) DEFAULT 0,
+    skor_b INT(11) DEFAULT 0
+);
+
+-- jadwal_volleyball
+DROP TABLE IF EXISTS jadwal_volleyball;
+CREATE TABLE jadwal_volleyball (
+    pertandingan INT(11) PRIMARY KEY,
+    tanggal DATE NOT NULL,
+    tim_a VARCHAR(50) NOT NULL,
+    tim_b VARCHAR(50) NOT NULL,
+    waktu VARCHAR(20) NOT NULL,
+    skor_a INT(11) DEFAULT 0,
+    skor_b INT(11) DEFAULT 0
+);
+
+-- jadwal_chess (pakai composite primary key ronde+meja, tanpa AUTO_INCREMENT)
+DROP TABLE IF EXISTS jadwal_chess;
+CREATE TABLE jadwal_chess (
+    ronde INT(11) NOT NULL,
+    meja INT(11) NOT NULL,
+    pemain1 VARCHAR(100) NOT NULL,
+    pemain2 VARCHAR(100) NOT NULL,
+    waktu VARCHAR(50) NOT NULL,
+    skor1 FLOAT DEFAULT 0,
+    skor2 FLOAT DEFAULT 0,
+    PRIMARY KEY (ronde, meja)
+);
+
+-- jadwal_archery
+DROP TABLE IF EXISTS jadwal_archery;
+CREATE TABLE jadwal_archery (
+    pertandingan INT(11) PRIMARY KEY,
+    nama_pertandingan VARCHAR(50) NOT NULL,
+    peserta1 VARCHAR(100) NOT NULL,
+    peserta2 VARCHAR(100) NOT NULL,
+    peserta3 VARCHAR(100) NOT NULL,
+    peserta4 VARCHAR(100) NOT NULL,
+    skor1 INT(11) DEFAULT 0,
+    skor2 INT(11) DEFAULT 0,
+    skor3 INT(11) DEFAULT 0,
+    skor4 INT(11) DEFAULT 0,
+    waktu VARCHAR(50) NOT NULL
+);
